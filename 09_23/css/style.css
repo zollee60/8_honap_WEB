@@ -1,0 +1,62 @@
+/* Tag selector - Az összes tag-re érvényes */
+h1 {
+    color:red;
+}
+
+h2 {
+    padding: 10px;
+    margin: 10px;
+    border: 5px solid blue;
+}
+
+table, tr, td, th {
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+
+a, a:visited {
+    color: greenyellow;
+    text-decoration: none;
+}
+/* Osztály azonosító - ugyanolyan elemek címkézésére / azonosítására szolgál */
+.greenBorder{
+    padding: 10px;
+    border: 5px dotted red;
+}
+
+/* Szelektorok kombinálása - ">" jel segítségével szülő-gyerek kapcsolatot tudunk leírni. */
+.greenBorder > li{
+    display: inline;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+/* Egyedi azonosító - Csak arra érvényes, amely elemnek megadtuk az id-t */
+#linkpelda{
+    padding: 10px;
+    margin: 10px;
+    border: 3px solid black;
+}
+
+#blueItem {
+    color: blue;
+}
+
+#kepkeret {
+    border: 5px solid pink;
+    /* Középre helyezés */
+    margin: 0 auto;
+}
+
+#kepkeret, #kepkeret > img {
+    width: 550px;
+}
+
+/* CSS szövegformázás */
+#kepkeret > p {
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+}

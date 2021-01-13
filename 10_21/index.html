@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript alapok</title>
+</head>
+<body>
+    <h1 id="title">Ez egy cím</h1>
+    <input id="add" type="button" value="Hozzáad">
+    <input id="pop" type="button" value="Töröl">
+
+    <div id="custom">
+        
+    </div>
+    <script>
+        function deleteHeader(){
+            if(number > 0){
+                customDiv.lastChild.remove();
+                number--;
+            }
+        }
+        function appendHeader(){
+            if(number < 6){
+                number++;
+                let header = document.createElement(`h${number}`);
+                header.innerText = "Ez egy hozzáadott header " + number;
+                customDiv.appendChild(header);
+            }
+        }
+
+        let number = 0;
+        let customDiv = document.querySelector("#custom");
+
+        document.querySelector("#add").onclick = appendHeader;
+        document.querySelector("#pop").onclick = deleteHeader;
+
+        let title = document.getElementById("title");
+        title.innerHTML = "Ez egy módosított cím";
+    </script>
+</body>
+</html>

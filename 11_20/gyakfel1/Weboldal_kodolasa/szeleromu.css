@@ -1,0 +1,48 @@
+body{
+    color: #293647;
+  }
+  
+  .bg-fej {
+    background-image: url("szelenergia2.jpg");
+    background-position: center;
+    height: 250px;
+    padding-top: 75px;
+  }
+  
+  .bg-fej h1{
+    color: white;
+    font-size: 500%;
+    text-transform: uppercase;
+    text-decoration: underline overline;
+    font-weight: bold;
+  }
+  
+  .container{
+    margin-bottom: 25px;
+  }
+  
+  .bg-torzs {
+    background-color: #C5C599;
+  }
+  
+  h3{
+    margin: 25px 0px;
+  }
+  
+  a {
+    
+    font-weight: bold;
+    color: darkblue;
+  }
+
+  footer{
+    padding: 20px;
+    font-size: large;
+  }
+
+  p{
+    text-align: justify;
+  }
+  
+  
+ 

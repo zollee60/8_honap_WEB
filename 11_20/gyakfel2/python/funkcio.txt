@@ -1,0 +1,610 @@
+﻿E100	színezék
+E100	antioxidáns
+E101	színezék
+E101	antioxidáns
+E101	színezék
+E102	színezék
+E104	színezék
+E110	színezék
+E120	színezék
+E122	színezék
+E123	színezék
+E124	színezék
+E127	színezék
+E128	színezék
+E129	színezék
+E131	színezék
+E132	színezék
+E133	színezék
+E140	színezék
+E141	színezék
+E142	színezék
+E150	színezék
+E150	ízesítő
+E150	színezék
+E150	ízesítő
+E150	színezék
+E150	ízesítő
+E150	színezék
+E150	ízesítő
+E151	színezék
+E153	színezék
+E154	színezék
+E155	színezék
+E160	színezék
+E160	színezék
+E160	színezék
+E160	színezék
+E160	színezék
+E160	színezék
+E160	színezék
+E161	színezék
+E161	színezék
+E161	színezék
+E161	színezék
+E161	színezék
+E161	színezék
+E161	színezék
+E161	színezék
+E162	színezék
+E163	színezék
+E163	színezék
+E163	színezék
+E163(c)	színezék
+E163(d)	színezék
+E163(e)	színezék
+E163(f)	színezék
+E170	színezék
+E170	töltőanyag
+E171	színezék
+E172	színezék
+E173	színezék
+E174	színezék
+E175	színezék
+E180	színezék
+E180	töltőanyag
+E200	tartósítószer
+E200	sav-szabályzó
+E201	tartósítószer
+E202	tartósítószer
+E203	tartósítószer
+E210	tartósítószer
+E211	tartósítószer
+E213	tartósítószer
+E214	tartósítószer
+E215	tartósítószer
+E216	tartósítószer
+E217	tartósítószer
+E218	tartósítószer
+E219	tartósítószer
+E220	tartósítószer
+E220	antioxidáns
+E221	tartósítószer
+E222	tartósítószer
+E223	tartósítószer
+E223	antioxidáns
+E224	tartósítószer
+E224	antioxidáns
+E226	tartósítószer
+E227	tartósítószer
+E228	tartósítószer
+E230	tartósítószer
+E231	tartósítószer
+E232	tartósítószer
+E233	tartósítószer
+E234	antibiotikum
+E234	tartósítószer
+E235	antibiotikum
+E235	tartósítószer
+E236	tartósítószer
+E236	ízesítő
+E236	antioxidáns
+E237	tartósítószer
+E237	ízesítő
+E237	antioxidáns
+E238	tartósítószer
+E238	antioxidáns
+E239	tartósítószer
+E242	fertőtlenítőszer
+E249	tartósítószer
+E250	tartósítószer
+E251	tartósítószer
+E252	tartósítószer
+E260	tartósítószer
+E260	sav-szabályzó
+E261	sav-szabályzó
+E262	tartósítószer
+E262	sav-szabályzó
+E262	ízesítő
+E263	tartósítószer
+E270	étkezési sav
+E270	sav-szabályzó
+E270	ízesítő
+E280	tartósítószer
+E281	tartósítószer
+E282	tartósítószer
+E282	kalcium forrás
+E283	tartósítószer
+E284	tartósítószer
+E285	antioxidáns
+E290	pezsgőgáz
+E290	hajtógáz
+E296	sav-szabályzó
+E297	sav-szabályzó
+E300	antioxidáns
+E300	vitamin
+E301	antioxidáns
+E301	színmegőrző
+E301	vitaminforrás
+E302	antioxidáns
+E302	színmegőrző
+E302	vitaminforrás
+E304	antioxidáns
+E306	antioxidáns
+E307	antioxidáns
+E308	antioxidáns
+E309	antioxidáns
+E310	antioxidáns
+E311	antioxidáns
+E312	antioxidáns
+E315	antioxidáns
+E316	antioxidáns
+E320	antioxidáns
+E321	antioxidáns
+E322	emulgeálószer
+E322	stabilizátor
+E322	antioxidáns
+E325	étkezési sav
+E325	sav-szabályzó
+E325	nyírkosító
+E325	antioxidáns
+E326	étkezési sav
+E326	sav-szabályzó
+E326	nyírkosító
+E326	antioxidáns
+E327	étkezési sav
+E327	sav-szabályzó
+E327	nyírkosító
+E327	emulgeálószer
+E327	antioxidáns
+E330	étkezési sav
+E330	antioxidáns
+E330	kelátképző
+E331	étkezési sav
+E331	sav-szabályzó
+E331	emulgeálószer
+E331	ízesítő
+E331	szekvesztráló
+E331	antioxidáns
+E331(a)	sav-szabályzó
+E331(a)	emulgeálószer
+E331(a)	ízesítő
+E331(a)	szekvesztráló
+E331(a)	antioxidáns
+E331(b)	étkezési sav
+E331(b)	sav-szabályzó
+E331(b)	emulgeálószer
+E331(b)	ízesítő
+E331(b)	szekvesztráló
+E331(b)	antioxidáns
+E331(c)	étkezési sav
+E331(c)	sav-szabályzó
+E331(c)	emulgeálószer
+E331(c)	antioxidáns
+E332	sav-szabályzó
+E332	emulgeálószer
+E332	ízesítő
+E332	szekvesztráló
+E332	antioxidáns
+E333	sav-szabályzó
+E333	emulgeálószer
+E333	ízesítő
+E333	szekvesztráló
+E334	étkezési sav
+E334	sav-szabályzó
+E334	antioxidáns
+E334	kelátképző
+E335	sav-szabályzó
+E335	emulgeálószer
+E335	ízesítő
+E335	szekvesztráló
+E335	antioxidáns
+E336	sav-szabályzó
+E336	antioxidáns
+E337	sav-szabályzó
+E337	emulgeálószer
+E337	antioxidáns
+E337	szekvesztráló
+E338	sav-szabályzó
+E339	sav-szabályzó
+E339	emulgeálószer
+E339	stabilizátor
+E339	antioxidáns
+E339(a)	sav-szabályzó
+E339(a)	emulgeálószer
+E339(a)	stabilizátor
+E339(a)	antioxidáns
+E339(b)	sav-szabályzó
+E339(b)	emulgeálószer
+E339(b)	stabilizátor
+E339(b)	antioxidáns
+E339(c)	sav-szabályzó
+E339(c)	emulgeálószer
+E339(c)	stabilizátor
+E339(c)	antioxidáns
+E340	sav-szabályzó
+E340	emulgeálószer
+E340	antioxidáns
+E340	sav-szabályzó
+E340	emulgeálószer
+E340	antioxidáns
+E340	sav-szabályzó
+E340	emulgeálószer
+E340	antioxidáns
+E340	sav-szabályzó
+E340	emulgeálószer
+E340	antioxidáns
+E341	emulgeálószer
+E341	kelesztő
+E341	nedvességelnyelő
+E341	emulgeálószer
+E341	kelesztő
+E341	nedvességelnyelő
+E341	emulgeálószer
+E341	kelesztő
+E341	nedvességelnyelő
+E341	emulgeálószer
+E341	kelesztő
+E341	nedvességelnyelő
+E342	emulgeálószer
+E342	kelesztő
+E342	nedvességelnyelő
+E350	sav-szabályzó
+E351	sav-szabályzó
+E352	sav-szabályzó
+E353	sav-szabályzó
+E354	sav-szabályzó
+E355	sav-szabályzó
+E356	sav-szabályzó
+E357	sav-szabályzó
+E363	sav-szabályzó
+E380	sav-szabályzó
+E385	sav-szabályzó
+E400	sűrítő anyag
+E400	stabilizátor
+E400	bevonóanyag
+E401	sűrítő anyag
+E401	stabilizátor
+E401	emulgeálószer
+E401	bevonóanyag
+E402	emulgeálószer
+E402	zselésítő
+E402	stabilizátor
+E402	sűrítő anyag
+E403	emulgeálószer
+E403	zselésítő
+E403	stabilizátor
+E403	sűrítő anyag
+E404	emulgeálószer
+E404	zselésítő
+E404	stabilizátor
+E404	sűrítő anyag
+E405	emulgeálószer
+E405	zselésítő
+E405	stabilizátor
+E405	sűrítő anyag
+E405	oldószer
+E406	emulgeálószer
+E406	zselésítő
+E406	sűrítő anyag
+E407	sűrítő anyag
+E407	zselésítő
+E407	stabilizátor
+E407	hordozó
+E407	emulgeálószer
+E410	sűrítő anyag
+E410	stabilizátor
+E412	sűrítő anyag
+E412	stabilizátor
+E413	emulgeálószer
+E413	sűrítő anyag
+E413	stabilizátor
+E414	emulgeálószer
+E414	sűrítő anyag
+E414	stabilizátor
+E415	sűrítő anyag
+E415	stabilizátor
+E416	sűrítő anyag
+E416	stabilizátor
+E417	sűrítő anyag
+E417	stabilizátor
+E418	sűrítő anyag
+E418	stabilizátor
+E420	édesítőszer
+E420	nedvesítőszer
+E420	kelátképző
+E420	hordozó
+E420	testesítő
+E421	nyírkosító
+E421	édesítőszer
+E422	nyírkosító
+E422	édesítőszer
+E422	tömegnövelő
+E422	hordozó
+E425	emulgeálószer
+E425	stabilizátor
+E425	sűrítő anyag
+E431	emulgeálószer
+E431	stabilizátor
+E431	sűrítő anyag
+E432	emulgeálószer
+E432	stabilizátor
+E432	sűrítő anyag
+E433	emulgeálószer
+E433	stabilizátor
+E433	sűrítő anyag
+E434	emulgeálószer
+E434	stabilizátor
+E434	sűrítő anyag
+E435	emulgeálószer
+E435	stabilizátor
+E435	sűrítő anyag
+E436	emulgeálószer
+E436	stabilizátor
+E436	sűrítő anyag
+E440	emulgeálószer
+E440	zselésítő
+E440	stabilizátor
+E440	sűrítő anyag
+E440	zselésítő
+E440(a)	emulgeálószer
+E440(a)	zselésítő
+E440(a)	stabilizátor
+E440(a)	sűrítő anyag
+E440(b)	stabilizátor, hordozó
+E441	emulgeálószer
+E441	zselésítő
+E441	sűrítő anyag
+E444	emulgeálószer
+E445	emulgeálószer
+E450(a)	emulgeálószer
+E450(a)	sav-szabályzó
+E450(a)	antioxidáns
+E450(b)	emulgeálószer
+E450(b)	sav-szabályzó
+E450(b)	antioxidáns
+E450(c)	emulgeálószer
+E450(c)	stabilizátor
+E451	emulgeálószer
+E452	emulgeálószer
+E460	sűrítő anyag
+E461	emulgeálószer
+E461	sűrítő anyag
+E463	emulgeálószer
+E463	stabilizátor
+E463	sűrítő anyag
+E464	emulgeálószer
+E464	stabilizátor
+E464	sűrítő anyag
+E465	emulgeálószer
+E465	stabilizátor
+E465	sűrítő anyag
+E466	emulgeálószer
+E466	stabilizátor
+E466	sűrítő anyag
+E470(a)	emulgeálószer
+E470(a)	stabilizátor
+E470(a)	ízesítőszer
+E470(b)	emulgeálószer
+E470(b)	stabilizátor
+E470(b)	ízesítőszer
+E471	emulgeálószer
+E471	stabilizátor
+E471	ízesítőszer
+E472	emulgeálószer
+E472	stabilizátor
+E472(a)	emulgeálószer
+E472(a)	stabilizátor
+E472(b)	emulgeálószer
+E472(b)	stabilizátor
+E472(c)	emulgeálószer
+E472(c)	stabilizátor
+E472(d)	emulgeálószer
+E472(d)	stabilizátor
+E472(e)	emulgeálószer
+E472(e)	stabilizátor
+E472(f)	emulgeálószer
+E472(f)	stabilizátor
+E473	emulgeálószer
+E473	stabilizátor
+E474	emulgeálószer
+E474	stabilizátor
+E475	emulgeálószer
+E475	stabilizátor
+E477	emulgeálószer
+E477	stabilizátor
+E479(b)	emulgeálószer
+E481	emulgeálószer
+E482	emulgeálószer
+E483	emulgeálószer
+E491	emulgeálószer
+E492	emulgeálószer
+E493	emulgeálószer
+E494	emulgeálószer
+E500	sav-szabályzó
+E500	térfogatnövelő
+E500	csomósodást gátló
+E501	sav-szabályzó
+E501	stabilizátor
+E501	hordozó
+E503	sav-szabályzó
+E503	térfogatnövelő
+E504	sav-szabályzó
+E504	csomósodást gátló
+E504	hordozó
+E507	sav-szabályzó
+E508	zselésítő anyag
+E508	hordozó
+E508	szilárdító anyag
+E509	hordozó
+E509	szilárdító anyag
+E510	hordozó
+E510	szilárdító anyag
+E511	hordozó
+E513	sav-szabályzó
+E514	sav-szabályzó
+E515	sav-szabályzó
+E516	lisztkezelőszer
+E516	szilárdító anyag
+E516	hordozó
+E517	lisztkezelőszer
+E517	stabilizátor
+E517	hordozó
+E520	szilárdító anyag
+E521	szilárdító anyag
+E521	sav-szabályzó
+E522	sav-szabályzó
+E522	stabilizátor
+E523	stabilizátor
+E523	szilárdító anyag
+E523	sav-szabályzó
+E524	sav-szabályzó
+E524	fényezőanyag
+E525	sav-szabályzó
+E526	sav-szabályzó
+E526	szilárdító anyag
+E527	sav-szabályzó
+E528	sav-szabályzó
+E529	sav-szabályzó
+E529	lisztkezelőszer
+E530	csomósodást gátló
+E535	csomósodást gátló
+E536	csomósodást gátló
+E538	csomósodást gátló
+E539	antioxidáns
+E539	kelátképző
+E540	sav-szabályzó
+E540	térfogatnövelő
+E541	sav-szabályzó
+E541	térfogatnövelő
+E543	sav-szabályzó
+E543	térfogatnövelő
+E550	csomósodást gátló
+E551	csomósodást gátló
+E551	hordozó
+E552	csomósodást gátló
+E552	hordozó
+E553(a)	csomósodást gátló
+E553(b)	csomósodást gátló
+E553(b)	hordozó
+E554	csomósodást gátló
+E555	csomósodást gátló
+E556	csomósodást gátló
+E558	hordozó
+E559	csomósodást gátló
+E559	hordozó
+E570	csomósodást gátló
+E574	sav-szabályzó
+E574	térfogatnövelő
+E575	sav-szabályzó
+E575	térfogatnövelő
+E576	kelátképző
+E577	kelátképző
+E577	hordozó
+E578	sav-szabályzó
+E578	szilárdító anyag
+E579	szín-stabilizátor
+E585	szín-stabilizátor
+E620	ízfokozó
+E621	ízfokozó
+E622	ízfokozó
+E623	ízfokozó
+E624	ízfokozó
+E625	ízfokozó
+E900	habzásgátló
+E900	emulgeálószer
+E900	csomósodást gátló
+E901	fényezőanyag
+E901	kenőanyag
+E901	térfogatnövelő
+E901	hordozó
+E902	fényezőanyag
+E902	kenőanyag
+E903	fényezőanyag
+E903	kenőanyag
+E904	fényezőanyag
+E904	kenőanyag
+E905	fényezőanyag
+E905	kenőanyag
+E911	fényezőanyag
+E911	kenőanyag
+E912	fényezőanyag
+E912	kenőanyag
+E914	fényezőanyag
+E914	kenőanyag
+E925	fertőtlenítő
+E927	texturáló anyag
+E938	csomagológáz
+E939	csomagológáz
+E941	csomagológáz
+E950	édesítőszer
+E951	édesítőszer
+E952	édesítőszer
+E954	édesítőszer
+E957	ízfokozó
+E957	édesítőszer
+E959	édesítőszer
+E967	édesítőszer
+E967	nedvesítőszer
+E967	hordozó
+E999	habképző anyag
+E1105	tartósítószer
+E1200	tömegnövelő
+E1200	stabilizátor
+E1200	sűrítő anyag
+E1200	nedvesítőszer
+E1200	hordozó
+E1200	texturáló anyag
+E1201	stabilizátor
+E1201	derítő anyag
+E1201	hordozó
+E1201	testesítő anyag
+E1202	hordozó
+E1202	stabilizátor
+E1400	kötő és fényező adalék
+E1400	ízfokozó
+E1404	emulgeálószer
+E1404	sűrítő anyag
+E1404	hordozó
+E1410	stabilizátor
+E1410	sűrítő anyag
+E1410	hordozó
+E1412	stabilizátor
+E1412	sűrítő anyag
+E1412	hordozó
+E1413	stabilizátor
+E1413	sűrítő anyag
+E1413	hordozó
+E1414	emulgeálószer
+E1414	sűrítő anyag
+E1414	hordozó
+E1420	stabilizátor
+E1420	sűrítő anyag
+E1420	hordozó
+E1422	stabilizátor
+E1422	sűrítő anyag
+E1422	hordozó
+E1440	emulgeálószer
+E1440	sűrítő anyag
+E1440	hordozó
+E1442	stabilizátor
+E1442	sűrítő anyag
+E1442	hordozó
+E1450	stabilizátor
+E1450	sűrítő anyag
+E1450	emulgeálószer
+E1450	hordozó
+E1505	habstabilizátor
+E1505	hordozó
+E1518	nedvesítőszer
+E1518	hordozó

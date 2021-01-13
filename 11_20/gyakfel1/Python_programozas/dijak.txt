@@ -1,0 +1,176 @@
+1972	Avar István	Érdemes mûvész
+1978	Darvas Iván	Kossuth-díj
+1963	Lukács Margit	Kossuth-díj
+1959	Szabó Gyula	Jászai Mari-díj
+1996	Kállai Ferenc	Örökös tag a Halhatatlanok Társulatában
+2007	Psota Irén	Kossuth-díj
+2006	Molnár Piroska	A Magyar Köztársasági Érdemrend tisztikeresztje
+1995	Garas Dezsõ	A Magyar Köztársasági Érdemrend középkeresztje
+1956	Kállai Ferenc	Jászai Mari-díj
+1966	Kállai Ferenc	Érdemes mûvész
+2013	Bitskey Tibor	A Magyar Érdemrend középkeresztje
+1969	Avar István	Jászai Mari-díj
+1955	Bessenyei Ferenc	Kossuth-díj
+1995	Zenthe Ferenc	A Magyar Köztársasági Érdemrend tisztikeresztje
+2004	Bodrogi Gyula	A Magyar Köztársasági Érdemrend középkeresztje
+1994	Andorai Péter	Kossuth-díj
+1959	Kállai Ferenc	Farkas–Ratkó-díj
+1998	Agárdy Gábor	Örökös tag a Halhatatlanok Társulatában
+2000	Bitskey Tibor	Kossuth-díj
+1958	Kállai Ferenc	Jászai Mari-díj
+1978	Sztankay István	Érdemes mûvész
+1967	Sztankay István	Farkas–Ratkó-díj
+2005	Bodrogi Gyula	Kossuth-díj
+1966	Sinkovits Imre	Kossuth-díj
+1977	Molnár Piroska	Jászai Mari-díj
+1967	Darvas Iván	Jászai Mari-díj
+1989	Raksányi Gellért	Kiváló mûvész
+1980	Szacsvay László	Farkas–Ratkó-díj
+1985	Gera Zoltán	Érdemes mûvész
+1954	Bessenyei Ferenc	Érdemes mûvész
+1973	Bodrogi Gyula	Érdemes mûvész
+1965	Sinkovits Imre	Farkas–Ratkó-díj
+1970	Sinkovits Imre	Érdemes mûvész
+1980	Andorai Péter	Jászai Mari-díj
+1999	Garas Dezsõ	Örökös tag a Halhatatlanok Társulatában
+1959	Agárdy Gábor	Jászai Mari-díj
+1997	Haumann Péter	Örökös tag a Halhatatlanok Társulatában
+1963	Bitskey Tibor	Jászai Mari-díj
+1998	Sztankay István	Kossuth-díj
+1962	Sinkovits Imre	Jászai Mari-díj
+1980	Haumann Péter	Érdemes mûvész
+1956	Berek Kati	Farkas–Ratkó-díj
+1978	Kóti Árpád	Jászai Mari-díj
+1998	Máthé Erzsi	Örökös tag a Halhatatlanok Társulatában
+1983	Bodrogi Gyula	Kiváló mûvész
+1971	Törõcsik Mari	Érdemes mûvész
+2006	Haumann Péter	A Magyar Köztársasági Érdemrend középkeresztje a csillaggal
+1966	Raksányi Gellért	Jászai Mari-díj
+1997	Bessenyei Ferenc	Örökös tag a Halhatatlanok Társulatában
+1997	Máthé Erzsi	A Magyar Köztársasági Érdemrend középkeresztje
+1962	Agárdy Gábor	Jászai Mari-díj
+1985	Haumann Péter	Kossuth-díj
+2004	Bodrogi Gyula	Örökös tag a Halhatatlanok Társulatában
+1968	Zenthe Ferenc	Jászai Mari-díj
+1988	Tordy Géza	Kiváló mûvész
+1976	Máthé Erzsi	Érdemes mûvész
+2002	Agárdy Gábor	A Magyar Köztársasági Érdemrend középkeresztje a csillaggal
+1960	Komlós Juci	Érdemes mûvész
+1966	Sztankay István	Jászai Mari-díj
+1980	Avar István	Kiváló mûvész
+1958	Lukács Margit	Érdemes mûvész
+1955	Sinkovits Imre	Jászai Mari-díj
+1995	Törõcsik Mari	A Magyar Köztársasági Érdemrend középkeresztje
+2008	Tordy Géza	A Magyar Köztársasági Érdemrend középkeresztje
+1967	Király Levente	Jászai Mari-díj
+1962	Szabó Gyula	Jászai Mari-díj
+2000	Szabó Gyula	Kossuth-díj
+1965	Garas Dezsõ	Jászai Mari-díj
+1995	Bodrogi Gyula	A Magyar Köztársasági Érdemrend tisztikeresztje
+2007	Avar István	A Magyar Köztársasági Érdemrend középkeresztje a csillaggal
+1995	Agárdy Gábor	A Magyar Köztársasági Érdemrend középkeresztje
+1963	Berek Kati	Jászai Mari-díj
+1954	Zenthe Ferenc	Jászai Mari-díj
+1976	Psota Irén	Érdemes mûvész
+1974	Lukács Margit	Kiváló mûvész
+1994	Psota Irén	A Magyar Köztársasági Érdemrend középkeresztje
+1992	Sinkovits Imre	A Magyar Köztársasági Érdemrend középkeresztje
+1960	Törõcsik Mari	Farkas–Ratkó-díj
+1989	Zenthe Ferenc	Kiváló mûvész
+1990	Cserhalmi György	Kossuth-díj
+1955	Darvas Iván	Jászai Mari-díj
+1973	Törõcsik Mari	Kossuth-díj
+1985	Agárdy Gábor	Kossuth-díj
+1985	Kóti Árpád	Érdemes mûvész
+1978	Raksányi Gellért	Érdemes mûvész
+1972	Haumann Péter	Jászai Mari-díj
+1956	Máthé Erzsi	Jászai Mari-díj
+1980	Tordy Géza	Érdemes mûvész
+1980	Agárdy Gábor	Kiváló mûvész
+1957	Raksányi Gellért	Farkas–Ratkó-díj
+2014	Kóti Árpád	Kossuth-díj
+2012	Gera Zoltán	A Magyar Érdemrend középkeresztje a csillaggal
+1962	Bodrogi Gyula	Jászai Mari-díj
+1974	Sztankay István	Jászai Mari-díj
+1957	Lukács Margit	Jászai Mari-díj
+2001	Kóti Árpád	Kiváló mûvész
+1957	Komlós Juci	Jászai Mari-díj
+1992	Lukács Margit	A Magyar Köztársasági Érdemrend középkeresztje
+1957	Berek Kati	Jászai Mari-díj
+1998	Sinkovits Imre	A Magyar Köztársasági Érdemrend középkeresztje a csillaggal
+1996	Psota Irén	Örökös tag a Halhatatlanok Társulatában
+2007	Berek Kati	Örökös tag a Halhatatlanok Társulatában
+2003	Avar István	Örökös tag a Halhatatlanok Társulatában
+1978	Garas Dezsõ	Érdemes mûvész
+1972	Szabó Gyula	Érdemes mûvész
+1973	Kállai Ferenc	Kossuth-díj
+2002	Garas Dezsõ	A Magyar Köztársasági Érdemrend középkeresztje a csillaggal
+1998	Tordy Géza	A Magyar Köztársasági Érdemrend tisztikeresztje
+2007	Andorai Péter	A Magyar Köztársasági Érdemrend tisztikeresztje
+2004	Gera Zoltán	Kiváló mûvész
+1959	Psota Irén	Jászai Mari-díj
+1991	Tordy Géza	Kossuth-díj
+1981	Molnár Piroska	Érdemes mûvész
+1993	Gera Zoltán	A Magyar Köztársasági Érdemrend középkeresztje
+1986	Király Levente	Érdemes mûvész
+1951	Bessenyei Ferenc	Farkas–Ratkó-díj
+1970	Haumann Péter	Jászai Mari-díj
+1970	Bessenyei Ferenc	Kiváló mûvész
+1969	Darvas Iván	Érdemes mûvész
+1998	Zenthe Ferenc	Örökös tag a Halhatatlanok Társulatában
+1992	Raksányi Gellért	Kossuth-díj
+2005	Tordy Géza	Örökös tag a Halhatatlanok Társulatában
+1959	Bitskey Tibor	Jászai Mari-díj
+1963	Garas Dezsõ	Jászai Mari-díj
+2007	Szabó Gyula	A Magyar Köztársasági Érdemrend középkeresztje
+1997	Sztankay István	A Magyar Köztársasági Érdemrend tisztikeresztje
+1977	Tordy Géza	Jászai Mari-díj
+1975	Avar István	Kossuth-díj
+1997	Törõcsik Mari	Örökös tag a Halhatatlanok Társulatában
+1997	Zenthe Ferenc	Kossuth-díj
+1995	Darvas Iván	A Magyar Köztársasági Érdemrend középkeresztje a csillaggal
+1971	Máthé Erzsi	Jászai Mari-díj
+2001	Szacsvay László	Érdemes mûvész
+1998	Komlós Juci	Örökös tag a Halhatatlanok Társulatában
+1962	Psota Irén	Jászai Mari-díj
+1983	Garas Dezsõ	Kiváló mûvész
+1999	Törõcsik Mari	Kossuth-díj
+1995	Kállai Ferenc	A Magyar Köztársasági Érdemrend középkeresztje
+1999	Molnár Piroska	Örökös tag a Halhatatlanok Társulatában
+1988	Berek Kati	Kiváló mûvész
+2003	Király Levente	Kossuth-díj
+1974	Sinkovits Imre	Kiváló mûvész
+1969	Törõcsik Mari	Jászai Mari-díj
+1981	Máthé Erzsi	Kiváló mûvész
+1982	Psota Irén	Kiváló mûvész
+1946	Lukács Margit	Farkas–Ratkó-díj
+2005	Darvas Iván	A Magyar Köztársasági Érdemrend nagykeresztje
+1990	Molnár Piroska	Kiváló mûvész
+1978	Szacsvay László	Jászai Mari-díj
+1954	Máthé Erzsi	Farkas–Ratkó-díj
+1997	Lukács Margit	Örökös tag a Halhatatlanok Társulatában
+1985	Máthé Erzsi	Kossuth-díj
+1968	Agárdy Gábor	Érdemes mûvész
+1970	Kállai Ferenc	Kiváló mûvész
+1964	Törõcsik Mari	Jászai Mari-díj
+1997	Sinkovits Imre	Örökös tag a Halhatatlanok Társulatában
+1996	Darvas Iván	Örökös tag a Halhatatlanok Társulatában
+1963	Avar István	Jászai Mari-díj
+1998	Darvas Iván	Kossuth-díj
+2013	Szacsvay László	Kiváló mûvész
+1986	Cserhalmi György	Érdemes mûvész
+2013	Gera Zoltán	Kossuth-díj
+1984	Bitskey Tibor	Érdemes mûvész
+1995	Molnár Piroska	Kossuth-díj
+1966	Psota Irén	Kossuth-díj
+1970	Berek Kati	Érdemes mûvész
+1953	Bessenyei Ferenc	Kossuth-díj
+1977	Törõcsik Mari	Kiváló mûvész
+2002	Kállai Ferenc	A Magyar Köztársasági Érdemrend középkeresztje a csillaggal
+1994	Bessenyei Ferenc	A Magyar Köztársasági Érdemrend középkeresztje
+1988	Garas Dezsõ	Kossuth-díj
+1967	Bodrogi Gyula	Jászai Mari-díj
+1975	Zenthe Ferenc	Érdemes mûvész
+1970	Tordy Géza	Jászai Mari-díj
+1981	Szabó Gyula	Kiváló mûvész
+1975	Darvas Iván	Kiváló mûvész

@@ -1,0 +1,37 @@
+w3schools.com
+BS4
+get started
+grid basic
+colors
+utilities csak a width height spacing
+
+helyezz el hivatkozást a kobanya.css és a bootstrap.min.css stíluslapokra
+
+1. sor
+
+a bekezdés osztálykijelölője: bevezeto
+a kép osztálykijelölői: mx-2 d-block
+
+
+2. sor (története)
+a sorban lévő divek:
+
+<div class="col-12 col-md-5 p-2">
+	<div class="p-3 bg-success h-100">	
+	</div>
+</div>
+<div class="col-12 col-md-7 p-2">
+	<div class="p-3 bg-danger h-100">
+	</div>
+</div>
+
+
+3. sor (érdekességek)
+
+a kép osztálykijelölői: img-thumbnail mx-auto d-block mt-4 mb-4
+
+
+4. sor
+
+nincs instrukció, próbálkozz önállóan megoldani
+

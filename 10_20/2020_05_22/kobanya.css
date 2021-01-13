@@ -1,0 +1,32 @@
+.bevezeto {
+  text-align: justify;
+  font-style: italic;
+}
+
+.bevezeto:first-letter{
+  margin-left: 25px;
+}
+
+p {
+	text-align: justify;
+}
+
+li {
+  margin: 10px 0px;
+}
+
+#sulikep{
+  max-height: 400px; 
+  max-width: 400px;
+}
+
+img {
+  width: 95%; 
+  max-width: 300px;
+}
+
+h2{
+  font-variant: small-caps;
+  margin: 10px 0px 5px;
+  border-bottom: 2px solid darkblue;
+}

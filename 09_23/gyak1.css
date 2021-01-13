@@ -1,0 +1,38 @@
+h1{
+    text-align: center;
+    color: brown;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+p{
+    margin-top: 0;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+table, tr, td, th {
+    border: 3px solid brown;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+table{
+    margin: 0 auto;
+}
+
+td{
+    padding: 10px;
+}
+
+#kepkeret, #kepkeret > img{
+    width: 500px;
+    margin: 10px auto;
+}
+
+.content{
+    width: 900px;
+    margin: 0 auto;
+    border: 3px solid brown;
+    padding: 10px;
+    text-align: justify;
+}

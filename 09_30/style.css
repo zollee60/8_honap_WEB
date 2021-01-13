@@ -1,0 +1,77 @@
+#formBox{
+    width: 600px;
+    margin: 0 auto;
+    border: 3px solid #2291ff;
+    background-color: #f2f8ff;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+fieldset > legend {
+    font-weight: bold;
+    font-size: 18px;
+    color: #1174d8;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border: 1px solid #b0d8ff;
+    border-radius: 10px;
+    padding: 15px 10px;
+    background-color: #ddeeff;
+}
+
+input[type="submit"]{
+    width: 100px;
+    height: 35px;
+    background-color: #2291ff;
+    color: white;
+    border: 1px solid #b0d8ff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover{
+    background-color: #3a9cff;
+}
+
+input[type="text"], input[type="number"]{
+    height: 30px;
+    border: 1px solid #2291ff;
+    border-radius: 10px;
+}
+
+input[type="text"]:focus, input[type="number"]:focus{
+    border: 2px solid #007ffd;
+    border-radius: 10px;
+    background-color: #ecf5ff;
+}
+
+#formBox > form{
+    display: flex;
+    flex-direction: column;
+}
+
+.part1{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0px;
+}
+
+.part2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    justify-content: space-evenly;
+}
+
+.checkmark{
+    width: 25px;
+    height: 25px;
+}
+
+

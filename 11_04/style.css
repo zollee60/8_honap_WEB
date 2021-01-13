@@ -1,0 +1,46 @@
+.eye{
+    border: 3px solid black;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 30px auto;
+}
+
+.pupil{
+    width: 130px;
+    height: 130px;
+    margin-left: 30px;
+    margin-top: 60px;
+    
+}
+
+.lashes{
+    width: 200px;
+    margin-left: 43%;
+
+    margin-top: 300px;
+    display: flex;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+}
+
+hr{
+    border: 1px solid black;
+    width: 40px;
+}
+
+#first{
+    transform: rotate(-110deg);
+}
+
+#second{
+    transform: rotate(-90deg);
+}
+
+#third{
+    transform: rotate(-70deg);
+}
