@@ -20,6 +20,12 @@ const userService = {
         } else{
             return null;
         }
+    },
+
+    getAvgAge: () => {
+        let osszeg = 0;
+        userRepo.forEach(u => osszeg += u.getAge());
+        return osszeg / userRepo.length;
     }
 }
 

@@ -2,7 +2,7 @@ const userService = require("../services/userService");
 const express = require('express');
 const router = express.Router();
 
-router.get("/:id", (req, res) => {
+router.get("/get/:id", (req, res) => {
     const id = req.params.id;
     const user = userService.getUserByID(id);
     if(user !== null){
@@ -13,9 +13,17 @@ router.get("/:id", (req, res) => {
                                     email: user.email }
         )
     } else {
-        res.send("Nincs ilyen user!")
+        res.sendStatus(404);
+        //res.send("Nincs ilyen user!")
     }
-    
+});
+
+router.get("/age", (req, res) => {
+    const avgAge = userService.getAvgAge();
+    res.render("avgAge", {
+        title: "Átlag életkor",
+        avgAgeMessage: `A userek átlag életkora: ${avgAge}`
+    });
 });
 
 module.exports = router;

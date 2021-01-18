@@ -1,0 +1,17 @@
+html
+  head
+    title Guess the Number!
+    style
+        include style.css
+  body
+    h1 Guess the Number!
+    if result === 1
+        h3 A kitalált szám kisebb!
+    else if result === -1
+        h3 A kitalált szám nagyobb!
+    else if result === 0
+        h3 Helyes megfejtés!
+    form(action="/guess" method="GET")
+        div.input
+            input(type='number' name='number' id='number')
+        input(type='submit' value='GUESS') 
