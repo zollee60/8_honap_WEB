@@ -1,0 +1,21 @@
+POST http://localhost:3000/char/add
+Content-Type: application/json
+
+{
+    "name": "Bandi",
+    "race": "Troll",
+    "gender": "male",
+    "caste": "Bandita"
+}
+
+###
+
+GET http://localhost:3000/char/all
+
+###
+
+GET http://localhost:3000/char/1
+
+###
+
+DELETE http://localhost:3000/char/1
