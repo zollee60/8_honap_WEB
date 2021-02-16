@@ -3,6 +3,7 @@ import "./App.css";
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { v4 } from "uuid";
+import { useFetch } from "./components/hooks";
 
 const CardDiv = styled.div`
   display: flex;
@@ -19,7 +20,13 @@ function App() {
   const [dataIn, setUrl] = useState("http://localhost:9000/book/all");
 
   const [deleteUrl, setDeleteUrl] = useState("");
-  const [data, setData] = useState(undefined);
+  const [datas, setDatas] = useState(undefined);
+  const [render, setRender] = useState(false);
+
+  /*   const [data, loading] = useFetch(
+    //data state, loading state from useFetch
+    dataIn
+  ); */
 
   useEffect(() => {
     fetch(deleteUrl, {
@@ -29,8 +36,13 @@ function App() {
         "Access-Control-Allow-Origin": "*",
         "Content-Type": "application/json",
       },
-    }).then(setDeleteUrl("delete successful"));
+    }).then(() => {
+      /* setUrl("http://localhost:9000/book/all"); */
+      setRender(!render);
+    });
   }, [deleteUrl]);
+
+  useEffect(() => {}, [render]);
 
   useEffect(() => {
     fetch(dataIn, {
@@ -45,34 +57,34 @@ function App() {
         return response.json();
       })
       .then((response) => {
-        setData(response);
-        /* console.log(typeof response) */
-      });
-  }, [dataIn, deleteUrl]);
-
-  console.log(dataIn);
-  console.log(data);
+        console.log(response);
+        setDatas(response);
+      })
+      .catch((err) => console.log(err));
+  }, [dataIn, deleteUrl, render]);
 
   return (
     <div className="App">
-      {data !== undefined &&
-        data.books.map((data, index) => {
+      {!datas ? (
+        <div>Loading...</div>
+      ) : (
+        datas.books.map((data, index) => {
           return (
             <CardDiv key={v4()}>
               <h3>{data.Title}</h3>
               <h4>by {data.Author}</h4>
-              <p>Read: {data.Elolvasva && `\u2713`}</p>
+              <p>Read: {data.Read && `\u2713`}</p>
               <button>Edit</button>
               <button
                 onClick={() => {
                   setDeleteUrl(`http://localhost:9000/book/del/${data.id}`);
-                  console.log(data);
                 }}>
                 Delete
               </button>
             </CardDiv>
           );
-        })}
+        })
+      )}
     </div>
   );
 }
