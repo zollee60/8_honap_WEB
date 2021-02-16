@@ -9,6 +9,7 @@ export const useFetch = (initUrl) => {
       mode: "cors",
       headers: {
         "Access-Control-Allow-Origin": "*",
+        "Content-Type": "application/json",
       },
     })
       .then((response) => {
@@ -16,6 +17,24 @@ export const useFetch = (initUrl) => {
         return response.json();
       })
       .then((json) => setData(json));
+  }, [url]);
+
+  return [data, setUrl];
+};
+
+export const useFetchDelete = (initUrl) => {
+  const [url, setUrl] = useState(initUrl);
+  const [data, setData] = useState(undefined);
+
+  useEffect(() => {
+    fetch(url, {
+      method: "DELETE",
+      mode: "cors",
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+        "Content-Type": "application/json",
+      },
+    }).then(console.log("deleted successful"));
   }, [url]);
 
   return [data, setUrl];

@@ -2,7 +2,7 @@ let bookList = [];
 
 const bookService = {
   save: (book) => {
-    book.id = bookList.length + 1;
+    book.id = Math.floor(Math.random() * 900000);
     bookList.push(book);
   },
 
