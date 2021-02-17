@@ -44,8 +44,10 @@ export const Input = (props) => {
         body: JSON.stringify(book),
       })
         .then(console.log(book))
+        .then(setReRender(!reRender))
         .then(props.setRender(reRender))
-        .then(setReRender(!reRender));
+        .then((document.getElementById("Title").value = ""))
+        .then((document.getElementById("Author").value = ""));
     }
   }, [book]);
 
