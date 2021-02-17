@@ -9,6 +9,11 @@
 
 }
 
+input {
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

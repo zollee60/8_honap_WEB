@@ -23,8 +23,8 @@ router.get("/:id", (req, res) => {
 });
 
 router.put("/update/:id", (req, res) => {
-  bookService.updateBook(req.params.id, req.body);
-  res.json(book);
+  bookService.updateBook(parseFloat(req.params.id), req.body);
+  res.json({ books: bookService.getBookList() });
 });
 
 module.exports = router;

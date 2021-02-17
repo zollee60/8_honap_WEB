@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { v4 } from "uuid";
 import { useFetch } from "./components/hooks";
+import { Input } from "./components/Input";
 
 const CardDiv = styled.div`
   display: flex;
@@ -28,6 +29,10 @@ function App() {
     dataIn
   ); */
 
+  const renderFunction = () => {
+    setRender(!render);
+  };
+
   useEffect(() => {
     fetch(deleteUrl, {
       method: "DELETE",
@@ -41,8 +46,6 @@ function App() {
       setRender(!render);
     });
   }, [deleteUrl]);
-
-  useEffect(() => {}, [render]);
 
   useEffect(() => {
     fetch(dataIn, {
@@ -65,6 +68,8 @@ function App() {
 
   return (
     <div className="App">
+      <Input setRender={setRender} />
+
       {!datas ? (
         <div>Loading...</div>
       ) : (

@@ -28,6 +28,7 @@ const bookService = {
     for (const key in updatedBook) {
       if (oldBook.hasOwnProperty(key)) {
         oldBook[key] = updatedBook[key];
+
         /* return bookList[updatedBook.id].  */
       }
     }
