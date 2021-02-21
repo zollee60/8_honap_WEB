@@ -1,10 +1,12 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable no-unused-vars */
 import "./App.css";
 /* import { useFetch } from "./components/useFetch"; */
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { v4 } from "uuid";
-import { useFetch } from "./components/hooks";
 import { Input } from "./components/Input";
+import { UpdateModal } from "./components/Modal";
 
 const CardDiv = styled.div`
   display: flex;
@@ -23,15 +25,17 @@ function App() {
   const [deleteUrl, setDeleteUrl] = useState("");
   const [datas, setDatas] = useState(undefined);
   const [render, setRender] = useState(false);
-
-  /*   const [data, loading] = useFetch(
-    //data state, loading state from useFetch
-    dataIn
-  ); */
-
-  const renderFunction = () => {
-    setRender(!render);
-  };
+  const [editUrl, setEditUrl] = useState("");
+  const [openState, setOpenState] = useState(false);
+  const [bookId, setBookId] = useState(0);
+  const [book, setBook] = useState({
+    Title: "",
+    Author: "",
+    Read: false,
+  });
+  const [updateUrl, setUpdateUrl] = useState(
+    `http://localhost:9000/book/update/${bookId}`
+  );
 
   useEffect(() => {
     fetch(deleteUrl, {
@@ -68,18 +72,28 @@ function App() {
 
   return (
     <div className="App">
-      <Input setRender={setRender} />
+      <Input setRender={setRender} render={render} />
 
       {!datas ? (
         <div>Loading...</div>
       ) : (
         datas.books.map((data, index) => {
           return (
-            <CardDiv key={v4()}>
+            <CardDiv key={v4()} id={data.id}>
               <h3>{data.Title}</h3>
               <h4>by {data.Author}</h4>
               <p>Read: {data.Read && `\u2713`}</p>
-              <button>Edit</button>
+
+              <button
+                onClick={() => {
+                  setBookId(data.id);
+                  setBook({ Title: data.Title, Author: data.Author, Read: data.Read });
+                  console.log(book);
+                  setOpenState(!openState);
+                }}>
+                Edit
+              </button>
+
               <button
                 onClick={() => {
                   setDeleteUrl(`http://localhost:9000/book/del/${data.id}`);
@@ -89,6 +103,22 @@ function App() {
             </CardDiv>
           );
         })
+      )}
+      {!datas ? (
+        <div>nincs modal még...</div>
+      ) : (
+        <>
+          <UpdateModal
+            openState={openState}
+            setOpenState={setOpenState}
+            bookId={bookId}
+            setRender={setRender}
+            render={render}
+            title={book.Title}
+            author={book.Author}
+            read={book.Read}
+          />
+        </>
       )}
     </div>
   );

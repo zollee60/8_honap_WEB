@@ -1,7 +1,9 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable no-unused-vars */
 import styled from "styled-components";
 import React, { useState, useEffect } from "react";
 
-const InputDiv = styled.div`
+export const InputDiv = styled.div`
   display: flex;
   flex-wrap: wrap;
   width: 90%;
@@ -10,10 +12,15 @@ const InputDiv = styled.div`
   justify-content: center;
 `;
 
+export const Button = styled.button`
+  padding: 0.5rem;
+  margin: 1rem auto;
+`;
+
 export const Input = (props) => {
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
-  const [read, setRead] = useState("");
+  const [read, setRead] = useState(false);
   const [postUrl, setPostUrl] = useState("http://localhost:9000/book/create");
   const [book, setBook] = useState({
     Title: "",
@@ -28,7 +35,7 @@ export const Input = (props) => {
   const onChangeAuthor = (e) => {
     setAuthor(e.target.value);
   };
-  const onChangeRead = (e) => {
+  const onChangeRead = () => {
     setRead(!read);
   };
 
@@ -44,10 +51,9 @@ export const Input = (props) => {
         body: JSON.stringify(book),
       })
         .then(console.log(book))
-        .then(setReRender(!reRender))
-        .then(props.setRender(reRender))
-        .then((document.getElementById("Title").value = ""))
-        .then((document.getElementById("Author").value = ""));
+        .then(props.setRender(!props.render))
+        .then(setAuthor(() => ""))
+        .then(setTitle(() => ""));
     }
   }, [book]);
 
@@ -55,18 +61,18 @@ export const Input = (props) => {
     <>
       <InputDiv>
         <label htmlFor="Title">Title:</label>
-        <input type="text" id="Title" onChange={onChangeTitle} />
+        <input type="text" id="Title" onChange={onChangeTitle} value={title} />
         <label htmlFor="Author">Author:</label>
-        <input type="text" id="Author" onChange={onChangeAuthor} />
+        <input type="text" id="Author" onChange={onChangeAuthor} value={author} />
         <label htmlFor="Read">Read:</label>
         <input type="checkbox" id="Read" onChange={onChangeRead} />
         <div>
-          <button
+          <Button
             onClick={() => {
               setBook({ Title: title, Author: author, Read: read });
             }}>
-            new book
-          </button>
+            Add new book
+          </Button>
         </div>
       </InputDiv>
     </>

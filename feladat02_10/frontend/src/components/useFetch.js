@@ -24,6 +24,7 @@ export const useFetch = (initUrl) => {
 
 export const useFetchDelete = (initUrl) => {
   const [url, setUrl] = useState(initUrl);
+  // eslint-disable-next-line no-unused-vars
   const [data, setData] = useState(undefined);
 
   useEffect(() => {
