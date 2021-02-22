@@ -28,11 +28,11 @@ function App() {
   const [editUrl, setEditUrl] = useState("");
   const [openState, setOpenState] = useState(false);
   const [bookId, setBookId] = useState(0);
-  const [book, setBook] = useState({
-    Title: "",
-    Author: "",
-    Read: false,
-  });
+
+  const [title, setTitle] = useState("");
+  const [author, setAuthor] = useState("");
+  const [read, setRead] = useState(false);
+
   const [updateUrl, setUpdateUrl] = useState(
     `http://localhost:9000/book/update/${bookId}`
   );
@@ -87,8 +87,10 @@ function App() {
               <button
                 onClick={() => {
                   setBookId(data.id);
-                  setBook({ Title: data.Title, Author: data.Author, Read: data.Read });
-                  console.log(book);
+                  setTitle(data.Title);
+                  setAuthor(data.Author);
+                  setRead(data.Read);
+
                   setOpenState(!openState);
                 }}>
                 Edit
@@ -114,9 +116,9 @@ function App() {
             bookId={bookId}
             setRender={setRender}
             render={render}
-            title={book.Title}
-            author={book.Author}
-            read={book.Read}
+            title={title}
+            author={author}
+            read={read}
           />
         </>
       )}

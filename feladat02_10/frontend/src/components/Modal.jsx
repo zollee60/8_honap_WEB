@@ -35,10 +35,10 @@ export const UpdateModal = (props) => {
         },
         body: JSON.stringify(book),
       })
-        .then(console.log(book))
+        /* .then(console.log(book)) */
         .then(props.setRender(!props.render));
     }
-  }, [book, read]);
+  }, [book, read, title, author]);
 
   return (
     <ReactModal isOpen={props.openState} closeTimeoutMS={700} ariaHideApp={false}>
