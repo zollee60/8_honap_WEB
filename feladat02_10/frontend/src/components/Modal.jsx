@@ -14,13 +14,13 @@ export const UpdateModal = (props) => {
   });
 
   const onChangeTitle = (e) => {
-    setTitle(e.target.value);
+    props.setTitle(e.target.value);
   };
   const onChangeAuthor = (e) => {
-    setAuthor(e.target.value);
+    props.setAuthor(e.target.value);
   };
   const onChangeRead = () => {
-    setRead(!read);
+    props.setRead(!props.read);
   };
 
   useEffect(() => {
@@ -38,21 +38,25 @@ export const UpdateModal = (props) => {
         /* .then(console.log(book)) */
         .then(props.setRender(!props.render));
     }
-  }, [book, read, title, author]);
+  }, [book, props.read, props.title, props.author]);
 
   return (
-    <ReactModal isOpen={props.openState} closeTimeoutMS={700} ariaHideApp={false}>
+    <ReactModal
+      {...props}
+      isOpen={props.openState}
+      closeTimeoutMS={700}
+      ariaHideApp={false}>
       <InputDiv>
         <label htmlFor="Title">Title:</label>
-        <input type="text" id="Title" value={title} onChange={onChangeTitle} />
+        <input type="text" id="Title" value={props.title} onChange={onChangeTitle} />
         <label htmlFor="Author">Author:</label>
-        <input type="text" id="Author" value={author} onChange={onChangeAuthor} />
-        <label htmlFor="Read">Read:</label>
-        <input type="checkbox" id="Read" onChange={onChangeRead} />
+        <input type="text" id="Author" value={props.author} onChange={onChangeAuthor} />
+        <label htmlFor="Read">Change read status:</label>
+        <input type="checkbox" id="Read" value={props.read} onChange={onChangeRead} />
         <div>
           <Button
             onClick={() => {
-              setBook({ Title: title, Author: author, Read: read });
+              setBook({ Title: props.title, Author: props.author, Read: props.read });
             }}>
             Update book
           </Button>

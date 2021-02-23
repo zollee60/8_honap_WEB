@@ -119,6 +119,9 @@ function App() {
             title={title}
             author={author}
             read={read}
+            setTitle={(title) => setTitle(title)}
+            setAuthor={(author) => setAuthor(author)}
+            setRead={(read) => setRead(read)}
           />
         </>
       )}
