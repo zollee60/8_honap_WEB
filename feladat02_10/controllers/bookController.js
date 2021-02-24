@@ -23,8 +23,9 @@ router.get("/:id", (req, res) => {
 });
 
 router.put("/update/:id", (req, res) => {
+  const book = bookService.getBook(parseFloat(req.params.id));
   bookService.updateBook(parseFloat(req.params.id), req.body);
-  res.json({ books: bookService.getBookList() });
+  res.json(book);
 });
 
 module.exports = router;
