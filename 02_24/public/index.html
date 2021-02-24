@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Data input</h1>
+<div class="container">
+    <div class="properties">
+        <fieldset>
+            <legend class="text-center"  >Add a new Book</legend>
+            <label for="title">Title</label>
+            <input type="text" id="title" class="form-control">
+            <label for="author">Author</label>
+            <input type="text" id="author" class="form-control">
+            <label for="published_at">Published at</label>
+            <input type="number" id="published_at" class="form-control">
+            <label for="finished">Finished</label>
+            <input type="checkbox" name="finished" id="finished">
+            <div><button id="add" type="button" class="btn btn-success">Add</button>   </div>
+        </fieldset>
+    </div>
+    <div class="chars" >
+        <table class="table table-dark" id="charTable">
+            <thead>
+              <tr>
+                <th >Title</th>
+                <th >Author</th>
+                <th >Published</th>
+                <th >Finished</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="cTable">
+                <tr>
+                  <td id="c-name"></td>
+                  <td id="c-gender"></td>
+                  <td id="c-race"></td>
+                  <td id="c-caste"></td>
+                </tr>
+              </tbody>
+            </table>
+    </div>  
+</div>
+<script src="script.js"></script>
+</body>
+</html>

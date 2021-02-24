@@ -31,6 +31,7 @@ const bookService = {
         /* return bookList[updatedBook.id].  */
       }
     }
+    return oldBook;
   },
 };
 

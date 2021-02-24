@@ -1,0 +1,22 @@
+POST http://localhost:3000/book/create
+Content-Type: application/json
+
+{
+    "author":"Jókai Mór",
+    "title":"Kőszívű ember fiai",
+    "publish_date":"1968",
+    "finished":"true"
+}
+
+###
+
+GET http://localhost:3000/book/all
+
+###
+
+PUT http://localhost:3000/book/update/1
+Content-Type: application/json
+
+{
+    "finished":"false"
+}

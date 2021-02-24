@@ -1,0 +1,9 @@
+POST http://localhost:3000/book/add
+Content-Type: application/json
+
+{
+    "title": "Cím",
+    "author": "Szerző",
+    "published_at": 1989,
+    "finished": true
+}
