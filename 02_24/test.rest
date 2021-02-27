@@ -7,3 +7,23 @@ Content-Type: application/json
     "published_at": 1989,
     "finished": true
 }
+
+###
+
+GET http://localhost:3000/book/all
+
+###
+DELETE http://localhost:3000/book/5
+
+###
+GET http://localhost:3000/book/7
+
+###
+
+PUT http://localhost:3000/book/update/8
+Content-Type: application/json
+
+{
+    "finished": false
+}
+

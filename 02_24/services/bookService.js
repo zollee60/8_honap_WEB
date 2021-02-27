@@ -1,54 +1,61 @@
-const dbConn = require("./dbConnection");
-
-let booklist=[];
+const getConnection = require("./dbConnection");
+const Book = require("../models/Book");
 
 const bookService = {
-    save: (book) => {
-        dbConn.connect();
-        dbConn.query(`INSERT INTO books (title,author,published_at,finished) VALUES (?,?,?,?)`,
-            [book.title,book.author,book.published_at,book.finished],
-            (error, results, fields) => {
-                console.log(results);
-            }
-        )
 
-        booklist.push({
-            id: booklist.length+1,
-            author: book.author,
-            title: book.title,
-            published_at: book.published_at,
-            finished: book.finished
-        });
-        return booklist.length+1;
+    save: async (book) => {
+        const dbConn = await getConnection();
+        const [rows, fields] = await dbConn.execute(`INSERT INTO books (title,author,published_at,finished) VALUES (?,?,?,?)`,
+            [book.title,book.author,book.published_at,book.finished]
+        );
+        const newBook = new Book(rows.insertId, book.title,book.author,book.published_at,book.finished)
+        return newBook;
     },
 
-    getBooklist: () => booklist,
+    getBooklist: async () => {
+        const dbConn = await getConnection();
+        const [rows, fields] = await dbConn.execute('SELECT * FROM books');
 
-    delete: (id) => {
-        booklist = booklist.filter((char) => {if(char.id !== id){return char}});
-        for(let i = 0; i < booklist.length; i++){
-            booklist[i].id = i+1;
+        const books = rows.map(row => new Book(row.id,row.title,row.author,row.published_at,row.finished))
+        return books;
+    },
+
+    delete: async (id) => {
+        const dbConn = await getConnection();
+        const [rows, fields] = await dbConn.execute('DELETE FROM books WHERE id = ?',[id]);
+    },
+
+    getBook : async (id) =>{
+        const dbConn = await getConnection();
+        const [rows, fields] = await dbConn.execute('SELECT * FROM books WHERE id = ?',[id]);
+
+        if(rows.length === 1){
+            const book = new Book(rows[0].id,rows[0].title,rows[0].author,rows[0].published_at,rows[0].finished);
+            return book;
+        } else{
+            return 0;
         }
     },
 
-    getBook :(id) =>{
-        return booklist.find(char => char.id === id);
-    },
+    update: async (id,newBookInfo) => {
+        const dbConn = await getConnection();
+        let sql = 'UPDATE books SET ';
 
-    update: (id,newBookInfo) => {
-        let updated = false;
-        for(let i = 0; i < booklist.length; i++){
-            if(booklist[i].id === id){
-                for(let key in newBookInfo){
-                    console.log(key);
-                    if(booklist[i].hasOwnProperty(key)){
-                        booklist[i][key] = newBookInfo[key];
-                    }
-                }
-                updated = true;
-            }
+        for(let key in newBookInfo){
+            sql += `${key} = ?, `;
         }
-        return updated;
+        sql = sql.substring(0,sql.length-2);
+
+        sql += ` WHERE id = ${id}`;
+        
+        const [rows, fields] = await dbConn.execute(sql,Object.values(newBookInfo));
+
+        if(rows.affectedRows === 1){
+            return true;
+        } else{
+            return false;
+        }
+
     }
 }
 

@@ -7,6 +7,10 @@ class Book{
         this.finished = finished
     }
 
+    getId(){
+        return this.id;
+    }
+
     getTitle() {
         return this.title;
     }
