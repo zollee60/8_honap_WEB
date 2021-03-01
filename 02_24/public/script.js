@@ -10,7 +10,7 @@ async function addBook(){
         published_at: published_at,
         finished: finished
     }
-    const response = await fetch("http://localhost:3000/book/add",
+    const response = await fetch("http://localhost:4000/book/add",
     {
         method: 'POST',
         
@@ -27,7 +27,7 @@ function DeleteElement(id){
         let btn = document.createElement('button');
         btn.textContent = "DELETE";
         btn.addEventListener("click", () => {
-            fetch(`http://localhost:3000/book/${id}`, {
+            fetch(`http://localhost:4000/book/${id}`, {
                 method: 'DELETE'
             }).then(() => {
                 renderBookList();
@@ -41,7 +41,7 @@ function genCheckBox(id,finished){
     cb.type = "checkbox";
     cb.checked = finished;
     cb.addEventListener("change", () => {
-        fetch(`http://localhost:3000/book/update/${id}`, {
+        fetch(`http://localhost:4000/book/update/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -53,7 +53,7 @@ function genCheckBox(id,finished){
 }
 
 async function renderBookList(){
-    const response = await fetch("http://localhost:3000/book/all");
+    const response = await fetch("http://localhost:4000/book/all");
     const data = await response.json();
     let todolist = document.querySelector('#cTable');
     todolist.innerHTML = '';
