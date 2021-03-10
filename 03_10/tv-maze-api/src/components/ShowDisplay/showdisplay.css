@@ -1,0 +1,27 @@
+.showContainer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 100vh;
+    padding-top: 30px;
+    
+}
+
+.showTile{
+    width: 150px;
+    height: 300px;
+    border: 3px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0px 15px;
+}
+
+.showTile > h3{
+    margin: 10px 0px;
+}
+
+.showTile > img{
+    width: 100%;
+}
