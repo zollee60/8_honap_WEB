@@ -38,6 +38,7 @@ export const UpdateModal = (props) => {
         /* .then(console.log(book)) */
         .then(props.setRender(!props.render));
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [book, props.read, props.title, props.author]);
 
   return (
