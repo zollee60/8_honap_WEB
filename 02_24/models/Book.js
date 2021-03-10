@@ -5,6 +5,7 @@ class Book{
         this.author = author,
         this.published_at = published_at,
         this.finished = finished
+        
     }
 
     getId(){

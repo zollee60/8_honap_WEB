@@ -15,11 +15,9 @@ function App() {
   }
 
   useEffect( () => {
-    console.log(books);
     
     fetchData();
 
-    console.log(books);
   },[]);
 
   return (

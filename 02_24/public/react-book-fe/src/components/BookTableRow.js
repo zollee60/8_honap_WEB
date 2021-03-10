@@ -1,7 +1,7 @@
 export default function BookTableRow(props) {
 
-  const handleChange = async (event) => {
-    props.update({finished: event.target.checked});
+  const handleChange = (event) => {
+    props.update({id: props.data.id, finished: event.target.checked});
   };
 
   const handleDelete = () => {

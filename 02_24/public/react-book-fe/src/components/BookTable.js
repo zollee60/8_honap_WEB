@@ -6,12 +6,12 @@ export default function BookTable(props) {
     const res = await fetch(`http://localhost:4000/book/${id}`, {
                 method: 'DELETE'
     });
-    const books = await res.json();
-    props.setBooks(books.books);
+    const data = await res.json();
+    props.setBooks(data.books);
   }
 
   const updateFinished = async (data) => {
-    const res = await fetch(`http://localhost:4000/book/update/${props.data.id}`, {
+    await fetch(`http://localhost:4000/book/update/${data.id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -19,10 +19,11 @@ export default function BookTable(props) {
       body: JSON.stringify(data),
     });
 
-    const books = await res.json();
     const newState = props.books.map((book) => {
-      if (book.id === props.data.id) book.finished = data.finished;
+      if (book.id === data.id) book.finished = data.finished;
+      return book;
     });
+    console.log(newState);
     props.setBooks(newState);
   }
 

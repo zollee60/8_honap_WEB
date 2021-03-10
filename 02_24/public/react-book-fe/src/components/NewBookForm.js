@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./style.css";
 
 function NewBookForm(props) {
+  
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
   const [publishedAt, setPublishedAt] = useState(0);
@@ -28,22 +29,24 @@ function NewBookForm(props) {
       title: title,
       author: author,
       published_at: publishedAt,
-      finished: finished
-    }
+      finished: finished,
+    };
 
-    await fetch("http://localhost:4000/book/add",
-    {
-        method: 'POST',
-        
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(newBook)
+    const response = await fetch("http://localhost:4000/book/add", {
+      method: "POST",
+
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newBook),
     });
 
-    const newBookList = [...props.books, newBook];
-    props.setBooks(newBookList);
-  }
+    if (response.ok) {
+      const resBook = await response.json();
+      const newBookList = [...props.books, resBook];
+      props.setBooks(newBookList);
+    }
+  };
 
   return (
     <div className="properties">
