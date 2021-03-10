@@ -13,6 +13,7 @@ import TheatersIcon from "@material-ui/icons/Theaters";
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,
+    minWidth: 150,
     margin: "1rem",
   },
   media: {
@@ -54,7 +55,7 @@ export function GridList(props) {
                   </Typography>
                   <Typography variant="body2" color="textSecondary" component="p">
                     {data.show.summary
-                      ? data.show.summary.replaceAll("/<s*p[^>]*>(.*?)<s*/s*p>/g", " ")
+                      ? data.show.summary.replaceAll(/( |<([^>]+)>)/gi, " ")
                       : "No summary"}
                   </Typography>
                 </CardContent>

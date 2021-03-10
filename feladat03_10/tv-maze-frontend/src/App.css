@@ -5,6 +5,7 @@
 .button {
   padding: 0.75rem 1.25rem;
   border-radius: 10rem;
+  min-width: 150px;
   color: #fff;
   text-transform: uppercase;
   font-size: 1rem;
@@ -58,6 +59,8 @@
 
 input {
   height: 2rem;
+  width: 20%;
   min-width: 150px;
   margin-top: 1rem;
+  border-radius: 2rem;
 }
