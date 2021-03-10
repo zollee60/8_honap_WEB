@@ -32,9 +32,11 @@ export function GridList(props) {
       className="cardWrapper"
       style={{
         display: "flex",
+        /* flexDirection: "column", */
         flexWrap: "wrap",
         justifyContent: "space-around",
         alignItems: "center",
+        /* alignContent: "center", */
       }}>
       {props.data &&
         props.data.map((data, index) => {
