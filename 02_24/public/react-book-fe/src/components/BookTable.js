@@ -1,13 +1,19 @@
 import BookTableRow from "./BookTableRow";
+import { selectBooks } from "../store/bookSlice";
+import { useSelector, useDispatch } from "react-redux";
+import { deleteBook, updateF } from '../store/bookSlice';
 
-export default function BookTable(props) {
+export default function BookTable() {
+  
+  const dispatch = useDispatch();
+  const bookStore = useSelector(selectBooks);
 
   const deleteRow = async (id) => {
     const res = await fetch(`http://localhost:4000/book/${id}`, {
                 method: 'DELETE'
     });
     const data = await res.json();
-    props.setBooks(data.books);
+    dispatch(deleteBook(id));
   }
 
   const updateFinished = async (data) => {
@@ -19,12 +25,7 @@ export default function BookTable(props) {
       body: JSON.stringify(data),
     });
 
-    const newState = props.books.map((book) => {
-      if (book.id === data.id) book.finished = data.finished;
-      return book;
-    });
-    console.log(newState);
-    props.setBooks(newState);
+    dispatch(updateF(data));
   }
 
   return (
@@ -40,7 +41,7 @@ export default function BookTable(props) {
           </tr>
         </thead>
         <tbody id="bTable">
-          {props.books.map(book => <BookTableRow data={book} delete={deleteRow} update={updateFinished} key={book.id} />)}
+          {bookStore.map(book => <BookTableRow data={book} delete={deleteRow} update={updateFinished} key={book.id} />)}
         </tbody>
       </table>
     </div>

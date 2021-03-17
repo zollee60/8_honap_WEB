@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { useDispatch } from 'react-redux';
+import { addBook } from '../store/bookSlice';
 import "./style.css";
 
 function NewBookForm(props) {
@@ -7,6 +9,8 @@ function NewBookForm(props) {
   const [author, setAuthor] = useState("");
   const [publishedAt, setPublishedAt] = useState(0);
   const [finished, setFinished] = useState(false);
+
+  const dispatch = useDispatch();
 
   const handleTitleChange = (event) => {
     setTitle(event.target.value);
@@ -43,8 +47,7 @@ function NewBookForm(props) {
 
     if (response.ok) {
       const resBook = await response.json();
-      const newBookList = [...props.books, resBook];
-      props.setBooks(newBookList);
+      dispatch(addBook(resBook));
     }
   };
 
