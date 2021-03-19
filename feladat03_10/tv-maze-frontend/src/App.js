@@ -17,6 +17,10 @@ function App() {
       });
   }, [url]);
 
+  function searchFn() {
+    setUrl(`http://api.tvmaze.com/search/shows?q=${search}`);
+  }
+
   return (
     <div className="App">
       <div className="search">
@@ -25,13 +29,17 @@ function App() {
           placeholder="search for something"
           name="search"
           id="s"
-          onChange={(e) => setSearch(e.target.value)}
+          onChange={(e) => {
+            setSearch(e.target.value);
+          }}
+          onKeyPress={(e) => {
+            if (e.key === "Enter") {
+              searchFn();
+            }
+          }}
         />
 
-        <div
-          className="button"
-          id="b"
-          onClick={() => setUrl(`http://api.tvmaze.com/search/shows?q=${search}`)}>
+        <div className="button" id="b" onClick={() => searchFn()}>
           SEARCH
         </div>
       </div>
