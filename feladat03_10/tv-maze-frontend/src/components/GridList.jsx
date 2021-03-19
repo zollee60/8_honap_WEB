@@ -97,7 +97,9 @@ export function GridList(props) {
             </Card>
           );
         })}
-      <TransitionModal open={open} setOpen={setOpen} data={propsData} id={id} />
+      {propsData && (
+        <TransitionModal open={open} setOpen={setOpen} data={propsData} id={id} />
+      )}
     </div>
   );
 }

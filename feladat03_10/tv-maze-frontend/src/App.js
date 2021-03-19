@@ -18,7 +18,7 @@ function App() {
   }, [url]);
 
   function searchFn() {
-    setUrl(`http://api.tvmaze.com/search/shows?q=${search}`);
+    setUrl(`https://api.tvmaze.com/search/shows?q=${search}`);
   }
 
   return (
@@ -43,7 +43,7 @@ function App() {
           SEARCH
         </div>
       </div>
-      {data && <GridList data={data} />}
+      {data ? <GridList data={data} /> : "No such movie"}
     </div>
   );
 }
