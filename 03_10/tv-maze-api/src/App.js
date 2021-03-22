@@ -1,23 +1,27 @@
-import './App.css';
-import {useState} from 'react';
-import SearchBar from './components/SearchBar/SearchBar';
-import ShowDisplay from './components/ShowDisplay/ShowDisplay';
+import "./App.css";
+import { useState } from "react";
+import SearchBar from "./components/SearchBar/SearchBar";
+import ShowDisplay from "./components/ShowDisplay/ShowDisplay";
+import FavTile from "./components/Favourites/FavTile";
+import FavouritesDisplay from "./components/Favourites/FavouritesDisplay";
+import { BrowserRouter, Route } from "react-router-dom";
+import NavBar from "./components/NavBar/NavBar";
 
 function App() {
-
-  const [shows, setShows] = useState([]);
-
-  const fetchResults = async (query) => {
-    const response = await fetch(`http://api.tvmaze.com/search/shows?q=${query}`);
-    const data = await response.json();
-    setShows(data);
-  }
-
   return (
-    <div className="App">
-      <SearchBar search={fetchResults}/>
-      <ShowDisplay shows={shows} />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Route exact path="/">
+          <NavBar />
+          <SearchBar />
+          <ShowDisplay />
+        </Route>
+        <Route exact path="/favourites">
+          <NavBar />
+          <FavouritesDisplay />
+        </Route>
+      </div>
+    </BrowserRouter>
   );
 }
 

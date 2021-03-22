@@ -1,15 +1,13 @@
-import './showdisplay.css';
+import '../ShowDisplay/showdisplay.css';
 import { useDispatch } from "react-redux";
-import { addFavourite, selectFavourites } from '../../store/showSlice';
-import { useSelector } from 'react-redux';
+import { deleteFavourite } from '../../store/showSlice';
 
-export default function ShowTile(props){
+export default function FavTile(props){
 
     const dispatch = useDispatch();
-    const favourites = useSelector(selectFavourites)
 
     const handleClick = () => {
-        dispatch(addFavourite(props.data))
+        dispatch(deleteFavourite(props.data.show.id))
     }
 
     return(
@@ -25,11 +23,7 @@ export default function ShowTile(props){
                 props.data.show.rating.average :
                 "Nincs értékelés"
             }
-            {
-                favourites.includes(props.data) ?
-                <input type="button" value="ADDED" disabled/> :
-                <input type="button" value="ADD TO FAV" onClick={handleClick}/>
-            }
+            <input type="button" value="DELETE" onClick={handleClick}/>
 
             
         </div>
