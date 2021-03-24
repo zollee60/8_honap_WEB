@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 const loadFromLocalStorage = () => {
     const data = localStorage.getItem("favourites")
@@ -13,6 +13,15 @@ const saveToLocalStorage = (data) => {
     localStorage.setItem("favourites", JSON.stringify(data));
 }
 
+export const fetchSearchResults = createAsyncThunk(
+    "show/search",
+    async (query) => {
+        const response = await fetch(`http://api.tvmaze.com/search/shows?q=${query}`);
+        const data = await response.json();
+        return data;
+    }
+);
+
 export const showSlice = createSlice({
     name: "show",
     initialState: {
@@ -20,12 +29,7 @@ export const showSlice = createSlice({
         favourites: loadFromLocalStorage()
     },
     reducers: {
-        setSearchResults: (state, action) => {
-            return {
-                ...state,
-                searchResults: action.payload
-            }
-        },
+        
 
         addFavourite: (state, action) => {
             const newState = {
@@ -52,10 +56,15 @@ export const showSlice = createSlice({
 
             return newState;
         }
+    },
+    extraReducers: {
+        [fetchSearchResults.fulfilled]: (state, action) => {
+            state.searchResults = action.payload;
+        }
     }
 });
 
-export const { setSearchResults, addFavourite, deleteFavourite } = showSlice.actions;
+export const { addFavourite, deleteFavourite } = showSlice.actions;
 
 export const selectSearchResults = (state) => state.show.searchResults;
 export const selectFavourites = (state) => state.show.favourites;
