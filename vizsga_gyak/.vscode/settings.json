@@ -1,0 +1,22 @@
+{
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#4D2005",
+        "titleBar.activeBackground": "#6C2D07",
+        "titleBar.activeForeground": "#FEFAF7"
+    },
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "46.101.185.21",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "DO - zollee60 - Szasz",
+            "database": "foglalkoztatas_vizsga",
+            "username": "szasz_edu",
+            "password": "SzaszSQL2021"
+        }
+    ]
+}
